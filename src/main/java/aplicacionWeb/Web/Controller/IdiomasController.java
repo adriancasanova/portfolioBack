@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
   @RestController  
- @CrossOrigin (origins = "http://localhost:4200")
-  
+// @CrossOrigin (origins = "http://localhost:4200")
+   @CrossOrigin (origins = "https://portafolio-angular-3c67e.web.app")
 public class IdiomasController {      
  @Autowired
 private IIdiomasService idiomasServ;  
