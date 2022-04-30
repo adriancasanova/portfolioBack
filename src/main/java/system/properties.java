@@ -9,5 +9,5 @@ package system;
  * @author Adrian
  */
 public class properties {
-    
+
 }
