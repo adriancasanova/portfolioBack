@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 //@CrossOrigin (origins = "http://localhost:4200")
+@CrossOrigin (origins = "https://portafolio-angular-3c67e.web.app")
 public class UsersController {
    
     @Autowired
