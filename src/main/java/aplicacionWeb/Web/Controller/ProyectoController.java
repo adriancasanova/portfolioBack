@@ -1,5 +1,4 @@
 package aplicacionWeb.Web.Controller;
-
 import aplicacionWeb.Web.model.Proyecto;
 import aplicacionWeb.Web.service.IProyectoService;
 import java.util.List;
