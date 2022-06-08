@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-  //@CrossOrigin (origins = "http://localhost:4200")
+ // @CrossOrigin (origins = "http://localhost:4200")
   @CrossOrigin (origins = "https://portafolio-angular-3c67e.web.app") 
 public class AuthController {
     @Autowired
@@ -24,8 +24,8 @@ public class AuthController {
         Users usuarioLogueado = usuarioDao.obtenerUsuarioPorCredenciales (usuario);
         if (usuarioLogueado != null) {
             String tokenJwt = jwtUtil.create(String.valueOf(usuarioLogueado.getId()), usuarioLogueado.getEmail());
-            return tokenJwt;
+            return tokenJwt;  
         }
-        return "FAIL";
+        return null;
     }
 }

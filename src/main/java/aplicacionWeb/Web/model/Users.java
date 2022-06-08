@@ -10,7 +10,7 @@ import javax.persistence.*;
 @ToString @EqualsAndHashCode
 public class Users  {     
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.AUTO)
     @Getter @Setter @Column(name = "id")
     private Long id;
 

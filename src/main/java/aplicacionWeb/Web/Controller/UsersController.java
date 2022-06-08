@@ -23,7 +23,7 @@ public class UsersController {
 
     @RequestMapping(value = "ver/usuarios", method = RequestMethod.GET)
     public List<Users> getUsuarios(@RequestHeader(value="Authorization") String token) {
-        if (!validarToken(token)) { return null; }
+        if (!validarToken(token)) { return null; } 
         return usuarioDao.getUsuarios();
     }
 
