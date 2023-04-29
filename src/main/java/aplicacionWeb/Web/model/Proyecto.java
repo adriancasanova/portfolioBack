@@ -11,14 +11,14 @@ import lombok.Setter;
 public class Proyecto {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-     private int id;
+     private Long id;
      private String proyectoTitulo;
      private String proyectoDescripcion;
      private String proyectoFecha;      
       private String proyectoLink;
        private String proyectoImg;  
 
-    public Proyecto(int id, String proyectoTitulo, String proyectoDescripcion, String proyectoFecha, String proyectoLink, String proyectoImg) {
+    public Proyecto(Long id, String proyectoTitulo, String proyectoDescripcion, String proyectoFecha, String proyectoLink, String proyectoImg) {
         this.id = id;
         this.proyectoTitulo = proyectoTitulo;
         this.proyectoDescripcion = proyectoDescripcion;
