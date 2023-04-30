@@ -7,4 +7,5 @@ public interface IProyectoService {
     public void agregarProyecto (Proyecto proyect);
     public void borrarProyecto (Long id);
     public Proyecto buscarProyecto (Long id); 
+     public void editarProyecto (Proyecto proyect);
 }
