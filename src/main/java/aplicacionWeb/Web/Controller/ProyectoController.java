@@ -33,7 +33,7 @@ private IProyectoService proyectoServ;
   proyectoServ.borrarProyecto(id);
   }  
    @PutMapping ("/portfolio/proyectos/{id}")
-  public void editarBanner (@RequestBody Proyecto proyect) {
+  public void editarProyectos (@RequestBody Proyecto proyect) {
   proyectoServ.editarProyecto(proyect);
   } 
   
